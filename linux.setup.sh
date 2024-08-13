@@ -43,5 +43,8 @@ sudo mv lazydocker-temp/lazydocker /usr/local/bin
 lazydocker --version
 rm -rf lazydocker.tar.gz lazydocker-temp
 
+echo "alias lzd='lazydocker'" >> ~/.bashrc
+source ~/.bashrc
+
 # purge cmdtest
 apt purge cmdtest
